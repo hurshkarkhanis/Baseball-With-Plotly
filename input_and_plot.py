@@ -25,15 +25,13 @@ with open(file_name) as f:
 
     header = next(baseball_file)
 
-    
-
     #build reference dictionary
     for x in range(0, len(header)):
         reference_dictionary[header[x]] = x
 
     #prompt user what to do
 
-    print("Enter Offensive Baseball Statistical Category (ex: BA, SLG, OBP)")
+    print("Enter Offensive Baseball Statistical Category (ex: 2B, 3B, HR)")
 
     #read in user input, put it into list
     while entering_statistics:
