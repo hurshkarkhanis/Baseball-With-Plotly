@@ -31,7 +31,13 @@ with open(file_name) as f:
 
     #prompt user what to do
 
-    print("Enter Offensive Baseball Statistical Category (ex: 2B, 3B, HR)")
+    print("Enter Statistical Category")
+    print("Possible entries: ")
+
+    for keys, values in reference_dictionary.items():
+        if keys != "Year" and keys != "Tms":
+            print(keys, " ", end = '')
+    print()
 
     #read in user input, put it into list
     while entering_statistics:
