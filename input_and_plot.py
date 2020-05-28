@@ -18,7 +18,7 @@ data_wanted = {} # dict of all the data wanted, based on user input
 
 trace_list = [] #list of traces to plot
 
-file_name = 'professional_baseball.csv'
+file_name = 'alex_rodriguez.csv'
 
 with open(file_name) as f:
     baseball_file = csv.reader(f, delimiter=',') 
