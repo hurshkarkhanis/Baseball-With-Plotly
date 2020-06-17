@@ -32,6 +32,7 @@ with open(file_name) as f:
     #prompt user what to do
 
     print("Enter Statistical Category")
+    
     print("Possible entries: ")
 
     for keys, values in reference_dictionary.items():
